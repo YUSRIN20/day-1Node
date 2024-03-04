@@ -5,7 +5,7 @@ const app  = express()
 const PORT =  4000;
 
 app.get('/',(req,res)=>{
-   res.status(200) .json({message:"status code sucess"})
+   res.status(200) .send(`<div style ="background-color:red; color:white"> <h1>Node Demo </h1></div>`)
 })
 app.get('/get-data',(req,res)=>{
     res.status(200) .json({message:"status code sucess",data:{name:"yusrin"}})
